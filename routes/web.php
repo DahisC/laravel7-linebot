@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function (Request $request) {
     log(json_encode($request->all()));
+    error_log(json_encode($request->all()));
     return view('welcome');
 });
